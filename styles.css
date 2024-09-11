@@ -1,0 +1,185 @@
+body {
+    font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 990px;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.stopwatch-container,
+.dropdown-container,
+.results-container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stopwatch-container {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.dropdown-container {
+    margin-top: 45px;
+    background-color: #e8eef7;
+    color: #333333;
+}
+
+.results-container {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.stopwatch-display {
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #1e3a8a;
+}
+
+.stopwatch-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.stopwatch-buttons button {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 0 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.stopwatch-buttons button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.stopwatch-buttons button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.stopwatch-laps {
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+    text-align: left;
+    color: #4b5563;
+}
+
+.stopwatch-lap {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #e8eef7;
+}
+
+.dropbtn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+}
+
+.dropbtn:hover {
+    background-color: #2563eb;
+}
+
+.results-container h2 {
+    margin-bottom: 16px;
+    color: #1e3a8a;
+}
+
+#resetBtn {
+    background-color: red;
+}
+
+#lapBtn {
+    background-color: rgb(18, 126, 18);
+}
+
+#selectedCourseTime,
+#lapTimes {
+    margin-bottom: 12px;
+}
+
+.time-box {
+    font-size: 1.5em;
+    color: #c9c3c3;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: greenyellow;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.card h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stopwatch and Dropdown</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropdownBtn">Courses & Topics</button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="#" class="dropdown-item">Programming Hero</a>
+                        <a href="#" class="dropdown-item">Apna College Web Dev</a>
+                        <a href="#" class="dropdown-item">Angela Yu Web Dev</a>
+                        <a href="#" class="dropdown-item">HTML CSS 50 Projects</a>
+                        <a href="#" class="dropdown-item">React Udemy Course</a>
+                        <a href="#" class="dropdown-item">Docker Kubernetes</a>
+                        <a href="#" class="dropdown-item">Neetcode-Leetcode</a>
+                        <a href="#" class="dropdown-item">Python Leetcode Course</a>
+                        <a href="#" class="dropdown-item">DIP</a>
+                        <a href="#" class="dropdown-item">CG</a>
+                        <a href="#" class="dropdown-item">IOT</a>
+                        <a href="#" class="dropdown-item">TELECOM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="stopwatch-container">
+                <div class="stopwatch-display" id="display">00:00:00</div>
+                <div class="stopwatch-buttons">
+                    <button id="startStopBtn">Start</button>
+                    <button id="resetBtn" disabled>Reset</button>
+                    <button id="lapBtn" disabled>Lap</button>
+                </div>
+                <div class="stopwatch-laps" id="laps"></div>
+            </div>
+
+            <div class="results-container" id="resultsContainer">
+                <h2>Results</h2>
+                <div id="selectedCourseTime"></div>
+                <div id="lapTimes"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="time-box" id="current-time"></div>
+            <div class="time-box" id="target-time">Sleeping time 4:00 AM</div>
+            <div class="card">
+                <h1 id="time-difference"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
