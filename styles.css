@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #000000;
+    background-color: rgb(176, 213, 228);
 }
 
 .main-container {
@@ -166,12 +166,12 @@ body {
 
 .time-box {
     font-size: 1.5em;
-    color: #c9c3c3;
+    color: #2b2d2b;
     margin-bottom: 10px;
 }
 
 .card {
-    background-color: greenyellow;
+    background-color: #3b82f6;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -180,6 +180,7 @@ body {
 
 .card h1 {
     font-size: 2em;
-    color: #333;
+    color: wheat;
     margin: 0;
+    text-align: center;
 }
